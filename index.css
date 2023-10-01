@@ -870,6 +870,10 @@ nav {
         padding: 10px 10px;
     }
 
+    .register-form label {
+        font-size: 10px;
+    }
+
     #loginbtn {
         transform: translate(-40%, 150%);
         width: 30vw;
