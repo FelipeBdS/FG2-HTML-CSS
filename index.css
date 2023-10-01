@@ -159,11 +159,10 @@ nav {
 }
 
 .register-form {
-    max-width: 30%;
-    height: 60vh;
+    max-width: 100%;
+    height: 100vh;
     border: 2px solid gray;
     border-radius: 10px;
-    transform: translateX(115%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,14 +175,30 @@ nav {
 }
 
 .register-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height:80vh ;
 }
 
 .register-form a {
     color: black;
     text-decoration: underline;
+}
+
+#loginbtn {
+    display: grid;
+    transform: translateX(100%);
+}
+
+#loginbtn button {
+    width: 20vw;
+    height: 10vh;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #success-message{
@@ -439,10 +454,9 @@ nav {
     }
 
     .register-form {
-        max-width: 50%;
+        max-width: 100%;
         height: 60vh;
         border: 2px solid gray;
-        transform: translateX(50%);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -454,10 +468,22 @@ nav {
     }
 
     .register-form form {
-        display: flex;
-        flex-direction: column;
-        gap: 3vh;
+        display: grid;
+        height: auto;
+        max-width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vh;
+        margin-bottom: auto;
+        padding: 10px 10px;
     }
+
+    #loginbtn {
+        transform: translate(-40%, 150%);
+        width: 30vw;
+        height: 6vh;
+        font-size: 15px;
+    }
+
 
     #success-message{
         display: none;
@@ -589,26 +615,28 @@ nav {
         
     }
 
-    .register-form {
-        max-width: 50%;
-        height: 60vh;
-        border: 2px solid gray;
-        transform: translateX(50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .register-form form {
+        display: grid;
+        height: auto;
+        max-width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vh;
+        margin-bottom: auto;
+        padding: 10px 10px;
+    }
+
+    #loginbtn {
+        transform: translate(-40%, 150%);
+        width: 30vw;
+        height: 6vh;
+        font-size: 15px;
     }
 
     .register-form h2 {
         text-align: center;
     }
 
-    .register-form form {
-        display: flex;
-        flex-direction: column;
-        gap: 3vh;
-    }
+    
 
     #success-message{
         display: none;
@@ -726,7 +754,7 @@ nav {
     }
 
     #logo-fg2 {
-        padding-left: 4vw;
+        padding-left: 2vw;
         width: 30%;
     }
     #logo-image {
@@ -744,7 +772,7 @@ nav {
     #menu-icon {
         display: inline-block;
         cursor: pointer;
-        
+        transform: translateX(50%);
     }
 
     #options-list{
@@ -799,36 +827,54 @@ nav {
         font-weight: bold;
     }
     .shirts {
-        flex: 1 0 100%; /* 100% de largura em dispositivos móveis */
+        width:80vw;
+        height: 40vh;
+        display: flex;
+        
     }
+
+    .highlights-products {
+        height: 70vh;  
+        width: 90%;
+        display: flex;  
+        flex-direction: column;
+        
+    }
+    
+    .highlights-container h2 {
+        margin: 0;
+        height: 14vh;
+        padding-left: 10vw;
+    }
+    
 
     #register-page {
         margin-top: 3vh;
         height: 100vh;
         width: 100%;
+        padding: 0;
         
     }
 
     .register-form {
-        max-width: 50%;
-        height: 60vh;
-        border: 2px solid gray;
-        border-radius: 10px;
-        transform: translateX(50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .register-form h2 {
-        text-align: center;
+        padding: 0;
     }
 
     .register-form form {
-        display: flex;
-        flex-direction: column;
-        gap: 3vh;
+        display: grid;
+        height: auto;
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vh;
+        margin-bottom: auto;
+        padding: 10px 10px;
+    }
+
+    #loginbtn {
+        transform: translate(-40%, 150%);
+        width: 30vw;
+        height: 6vh;
+        font-size: 15px;
     }
 
     #success-message{
@@ -902,12 +948,14 @@ nav {
 
     #about-group img, div {
         max-width: 100%;
+        padding-right: 5vw;
     }
     .select-a-brand {
         display: none;
     }
     .container-products {
         display: grid;
+        padding: 0;
     }
 
     .brand-dropdown button {
@@ -918,7 +966,7 @@ nav {
         display: block;
         text-align: center;
         background-color: rgb(207, 202, 202);
-        
+        padding: 0;
     }
 
     #toggle-dropdown {
