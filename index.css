@@ -772,7 +772,7 @@ nav {
     #menu-icon {
         display: inline-block;
         cursor: pointer;
-        transform: translateX(50%);
+        transform: translateX(150%);
     }
 
     #options-list{
